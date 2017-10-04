@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formulario1.component.css']
 })
 export class Formulario1Component implements OnInit {
-
+  sName: string;
   constructor() { }
 
   ngOnInit() {
+    this.sName = 'Antonio';
   }
 
 }

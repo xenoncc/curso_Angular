@@ -1,0 +1,16 @@
+<h1>banana box</h1>
+<p>
+    <label for="input-name2" >Escribe tu nombre:</label>
+    <input id="input-name2" type="text" 
+    [(ngModel)]="sName" #barbaro
+   />
+  </p>
+  <p>
+    Hola {{sName.toUpperCase()}}
+     y otra manera de hacerlo: {{gimmeName()}}
+  </p>
+  <p>usando referencias locales en plantillas (no pasa por el controller) {{barbaro.value}}</p>
+  <!--input type="button" (click)="sName=''" value='borrar'/-->
+  <input type="button" (click)="borrar($event)" value='borrar'/>
+
+<p *ngIf="sName == 'Antonio' ">mostrar</p>

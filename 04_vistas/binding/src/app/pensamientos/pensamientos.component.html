@@ -1,0 +1,20 @@
+
+    <input #txtpensamiento type="text" 
+    [(ngModel)]="sName"/>
+
+
+  <input type="button" (click)="addPensamiento(txtpensamiento.value)" value='añadir'/>
+
+<div *ngIf="pensamientos.length>0">
+<h1>lista de pensamientos</h1>
+<ul>
+  <li *ngFor="let item of pensamientos; let i =index ">{{item}}</li>
+</ul>
+</div>
+<div *ngIf="pensamientos.length>0; then hayIdeas else sinIdeas">wtf- angular4</div>
+<ng-template #hayIdeas>
+  <p>con ideas</p>
+</ng-template>
+<ng-template #sinIdeas>
+  <p>sin ideas</p>
+</ng-template>
