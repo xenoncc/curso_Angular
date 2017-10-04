@@ -12,9 +12,9 @@
       #firstnameState="ngModel">
   </p>
 
-    <!--Mensajes de validación-->			
+    <!--Mensajes de validación-- probando el untouched-->			
     <div class="error-message" 
-      [hidden]="firstnameState.valid || firstnameState.pristine">
+      [hidden]="!firstnameState.untouched &&(firstnameState.valid || firstnameState.pristine)">
       El nombre es obligatorio</div>
     <!--
     <div class="error-message" ng-show="myform.firstname.$dirty

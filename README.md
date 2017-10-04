@@ -57,3 +57,9 @@ Todo lo que no sea inyección de dependencias mejor ponerlo en el onInit
 #Crear un módulo:
     ng g m [nombre]
 
+#Siempre se me olvida meter en app.module.ts
+import {FormsModule} from '@angular/forms';
+para usar formularios binding
+
+#Problema con los events emitter
+Se tienen que instanciar antes del ngOnInit. no podemos instanciar ahí, tenemos que hacerlo bien en el constructor o en la declaración.
