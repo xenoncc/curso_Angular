@@ -72,6 +72,6 @@ ng new --routing [nombre]
 
 
 
-d$ ng g c shared\cabeza^C
-//crea el componente about sin crear una carpeta y lo pone junto al modulo about
+ng g c [dir-modulo]\[componente]
+# crea el componente about sin crear una carpeta y lo pone junto al modulo about
 ng g c  --flat about/about
