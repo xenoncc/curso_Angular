@@ -63,3 +63,15 @@ para usar formularios binding
 
 #Problema con los events emitter
 Se tienen que instanciar antes del ngOnInit. no podemos instanciar ahí, tenemos que hacerlo bien en el constructor o en la declaración.
+
+#crear un service:
+ng g s buscar
+
+#crea un proyecto con modulo de enrutamiento
+ng new --routing [nombre]
+
+
+
+d$ ng g c shared\cabeza^C
+//crea el componente about sin crear una carpeta y lo pone junto al modulo about
+ng g c  --flat about/about

@@ -1,0 +1,11 @@
+<p>
+  <input type="text" placeholder="filtro de libros"
+  [(ngModel)]="nombreLibro"/>
+  <button (click)="buscarLibros()">Buscar</button>
+</p>
+<div *ngIf="aLibros.length > 0">
+    <h2>Libros sobre {{nombreLibro}}</h2>
+    <ul>
+      <li *ngFor="let libro of aLibros">{{libro}}</li>
+    </ul>
+  </div>
